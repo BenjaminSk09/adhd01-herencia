@@ -12,11 +12,15 @@
             return $sueldoLiquido; 
         }
         public function verDatos(){
+
+            $sueldoLiquido = $this->calcularSueldoLiquido();
+
             return "<br>Código de empleado: ". $this->codigo 
                 . parent::verDatos() 
                 ."<br>Nivel: ". $this->nivelAcademico
                 ."<br> Sueldo base:" .$this->sueldoBase
-                ."<br> IGSS: ". $this->igss; 
+                ."<br> IGSS: ". $this->igss
+                ."<br>Sueldo líquido: ". $sueldoLiquido; 
         }
     }
 ?>
