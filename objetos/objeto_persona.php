@@ -3,15 +3,15 @@
     include_once('../clases/Persona.php');
     //instanciar la clase = crear un objeto
     $persona = new Persona();
+    $persona->asignarNombre($_GET['txtNombre']);
+    //mostrar contenido del atributo nombre,es privado por eso uso un método
     //asigne valor al atributo apellido el cual es publico
     $persona->apellido=$_GET['txtApellido'];
     //mostrarndo el contenido del atributo apellido el cual es public
     echo "<br>Apellido: ". $persona->apellido;
-    $persona->telefono=22334455;
-    $persona->direccion="Calle Doroteo Guamuch Flores 7-51 zona 5";
+    $persona->telefono=$_GET['txtTelefono'];
+    $persona->direccion=$_GET['txtDireccion'];
     //asignado nombre por medio de un método porque el atributo es privado
-    $persona->asignarNombre($_GET['txtNombre']);
-    //mostrar contenido del atributo nombre,es privado por eso uso un método
     
     echo "<br>Nombre: ". $persona->verNombre();
     echo "<br>".$persona->nombreCompleto();
