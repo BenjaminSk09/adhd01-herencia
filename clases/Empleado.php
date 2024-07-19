@@ -19,8 +19,7 @@
                 . parent::verDatos() 
                 ."<br>Nivel: ". $this->nivelAcademico
                 ."<br> Sueldo base:" .$this->sueldoBase
-                ."<br> IGSS: ". $this->igss
-                ."<br>Sueldo líquido: ". $sueldoLiquido; 
+                ."<br> IGSS: ". $this->igss;
         }
     }
 ?>
