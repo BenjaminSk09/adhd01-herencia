@@ -24,6 +24,19 @@
                             <input type="text" id="txtApellido" name="txtApellido" class="form-control"
                                 placeholder="Ingrese su apellido">
                         </div>
+
+                        <div class="mb-3">
+                            <label for="txtTelefono" class="form-label">Telefono</label>
+                            <input type="number" id="txtTelefono" name="txtTelefono" class="form-control"
+                                placeholder="Ingrese su Numero telefonico">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="txtDireccion" class="form-label">Direccion</label>
+                            <input type="text" id="txtDireccion" name="txtDireccion" class="form-control"
+                                placeholder="Ingrese su Direccion">
+                        </div>
+
                         <div class="mb-3">
                             <input type="submit" value="Enviar" class="form-control btn btn-primary" name="btnEnviar">
                         </div>
