@@ -10,8 +10,8 @@
         }
         public function verDatos(){
             return parent::verDatos()
-                ."<br>Tipo Contratación: ". $this->tipoContratacion
-                ."<br>comisión: ". $this->comisionVenta;
+                ."<br>Tipo de Contratación: ". $this->tipoContratacion
+                ."<br>comisión de ventas: ". $this->comisionVenta;
         }
     }
 ?>
