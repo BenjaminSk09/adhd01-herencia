@@ -2,18 +2,18 @@
     include_once('../clases/Ventas.php');
     $ventas = new Ventas();
 
-    $ventas->tipoContratacion="Empleado permanente";
-    $ventas->comisionVenta=1000;
-    //atributos que hereda de la clase empleado y persona
-    //empleado    
-    $ventas->codigo=123;
-    $ventas->nivelAcademico="Técnico FullStack";
-    $ventas->sueldoBase=1000;
+    $ventas->tipoContratacion=$_GET['txtTipoContratacion'];
+    $ventas->comisionVenta=$_GET['txtComisionVentas'];
+    
+    //atributos que hereda de la clase empleado y persona 
+    $ventas->codigo=$_GET['txtCodigo'];
+    $ventas->nivelAcademico=$_GET['txtNivelAcademico'];
+    $ventas->sueldoBase=$_GET['txtSueldoBase'];
     //persona
-    $ventas->asignarNombre('Fulanito');
-    $ventas->apellido="de Tal";
-    $ventas->telefono=12345678;
-    $ventas->direccion="Zona 5";
+    $ventas->asignarNombre($_GET['txtNombre']);
+    $ventas->apellido=$_GET['txtApellido'];
+    $ventas->telefono=$_GET['txtTelefono'];
+    $ventas->direccion=$_GET['txtDireccion'];
 
     echo "Sueldo liquido: ". $ventas->calcularSueldoLiquido();
     echo $ventas->verDatos();
